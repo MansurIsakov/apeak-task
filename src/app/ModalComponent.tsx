@@ -35,9 +35,20 @@ export function ModalComponent() {
       <DialogTrigger asChild>
         <Button variant="outline">Add Experience</Button>
       </DialogTrigger>
-      <DialogContent className="w-11/12 sm:max-w-md">
+      <DialogContent className="w-11/12 overflow-hidden sm:max-w-[640px]">
         <DialogHeader>
-          <DialogTitle>Add experience</DialogTitle>
+          <DialogTitle>
+            <div
+              className="after: relative mb-4 hidden h-12 w-12 rounded-lg border border-component-border p-3 shadow-xs sm:block"
+              aria-hidden={true}>
+              <span className="absolute -left-[24px] -top-[24px] h-[96px] w-[96px] rounded-full border border-gray-200 opacity-50"></span>
+              <span className="absolute -left-[46px] -top-[46px] h-[140px] w-[140px] rounded-full border border-gray-200 opacity-50"></span>
+              <span className="absolute -left-[64px] -top-[64px] h-[182px] w-[182px] rounded-full border border-gray-200 opacity-50"></span>
+              <span className="absolute -left-[84px] -top-[84px] h-[226px] w-[226px] rounded-full border border-gray-200 opacity-50"></span>
+              <Icons.Flag className="h-6 w-6" />
+            </div>
+            Add experience
+          </DialogTitle>
           <DialogDescription>
             Share where you’ve worked on your profile.
           </DialogDescription>
@@ -128,7 +139,9 @@ export function ModalComponent() {
             </Button>
           </DialogClose>
           <DialogClose asChild className="w-full">
-            <Button type="button">Add experience</Button>
+            <Button type="button" disabled={false}>
+              Add experience
+            </Button>
           </DialogClose>
         </DialogFooter>
       </DialogContent>

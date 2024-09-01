@@ -61,6 +61,7 @@
     --fg-quaternary: 221, 13%, 46%;
 
     --component-accent: 259 63% 59%;
+    --component-border: 218 17% 91%;
 
     --shadow-xs: 0px 1px 2px 0px hsla(220, 43%, 11%, 0.05);
   }
