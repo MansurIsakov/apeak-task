@@ -1,7 +1,6 @@
 import { QuestionMarkCircledIcon } from '@radix-ui/react-icons';
 
-import { Save } from '@/components/icons/save';
-import { Search } from '@/components/icons/search';
+import { Icons } from '@/components/icons';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -56,7 +55,7 @@ export function ModalComponent() {
               <Input
                 id="company"
                 placeholder="Search for company"
-                inputPrefix={<Search />}
+                inputPrefix={<Icons.Search />}
               />
             </div>
             <div className="w-full space-y-1.5">
@@ -75,7 +74,7 @@ export function ModalComponent() {
               <Input
                 id="location"
                 placeholder="Search for city"
-                inputPrefix={<Search />}
+                inputPrefix={<Icons.Search />}
               />
             </div>
             <div className="w-full space-y-1.5">
@@ -125,7 +124,7 @@ export function ModalComponent() {
               type="button"
               variant="secondary"
               className="flex items-center gap-1.5">
-              <Save className="h-5 w-5" /> Save as draft
+              <Icons.Save className="h-5 w-5" /> Save as draft
             </Button>
           </DialogClose>
           <DialogClose asChild className="w-full">

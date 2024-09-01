@@ -3,8 +3,7 @@
 import { cn } from '@/lib/utils';
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import * as React from 'react';
-
-import { Close } from '@/components/icons/close';
+import { Icons } from '../icons';
 
 const Dialog = DialogPrimitive.Root;
 
@@ -88,7 +87,7 @@ const DialogTitle = React.forwardRef<
     />
 
     <DialogPrimitive.Close className="absolute right-0 top-1/2 flex -translate-y-1/2 transform items-center justify-center rounded-sm p-4 opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
-      <Close className="h-3 w-3 text-fg-quinary" />
+      <Icons.Close className="h-3 w-3 text-fg-quinary" />
       <span className="sr-only">Close</span>
     </DialogPrimitive.Close>
   </div>
