@@ -35,12 +35,12 @@
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
+    --muted-foreground: 221, 13%, 46%;
+    --accent: 259 63% 59%;
     --accent-foreground: 240 5.9% 10%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
+    --border: 217, 16%, 84%;
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
     --chart-1: 12 76% 61%;
@@ -49,6 +49,18 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+
+    /* Untitled UI */
+    --primary-900: 220, 43%, 11%;
+
+    --secondary-700: 217, 24%, 27%;
+
+    --tertiary-600: 216, 18%, 34%;
+
+    --fg-quinary: 218, 15%, 65%;
+    --fg-quaternary: 221, 13%, 46%;
+
+    --shadow-xs: 0px 1px 2px 0px hsla(220, 43%, 11%, 0.05);
   }
   .dark {
     --background: 240 10% 3.9%;
