@@ -1,8 +1,8 @@
-import { ModalComponent } from "./ModalComponent";
+import { ModalComponent } from './ModalComponent';
 
 export default function Home() {
   return (
-    <main className="flex h-screen  items-center justify-center p-24 bg-neutral-900">
+    <main className="flex h-screen items-center justify-center bg-neutral-900 p-24">
       <ModalComponent />
     </main>
   );

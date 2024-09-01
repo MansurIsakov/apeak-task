@@ -1,4 +1,8 @@
-import { Button } from "@/components/ui/button";
+import { QuestionMarkCircledIcon } from '@radix-ui/react-icons';
+
+import { Save } from '@/components/icons/save';
+import { Search } from '@/components/icons/search';
+import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogClose,
@@ -8,26 +12,23 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Search } from "@/components/icons/search";
+} from '@/components/ui/dialog';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
-import { QuestionMarkCircledIcon } from "@radix-ui/react-icons";
+} from '@/components/ui/select';
+import { Textarea } from '@/components/ui/textarea';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { Save } from "@/components/icons/save";
+} from '@/components/ui/tooltip';
 
 export function ModalComponent() {
   return (
@@ -43,14 +44,14 @@ export function ModalComponent() {
           </DialogDescription>
         </DialogHeader>
 
-        <div className="flex flex-col items-center space-y-4 w-full">
+        <div className="flex w-full flex-col items-center space-y-4">
           <div className="w-full space-y-1.5">
             <Label htmlFor="title">Title</Label>
             <Input id="title" placeholder="What is your title?" />
           </div>
 
-          <div className="flex gap-4 w-full">
-            <div className="space-y-1.5 w-full">
+          <div className="flex w-full gap-4">
+            <div className="w-full space-y-1.5">
               <Label htmlFor="company">Company</Label>
               <Input
                 id="company"
@@ -58,7 +59,7 @@ export function ModalComponent() {
                 inputPrefix={<Search />}
               />
             </div>
-            <div className="space-y-1.5 w-full">
+            <div className="w-full space-y-1.5">
               <Label htmlFor="website">Website</Label>
               <Input
                 id="website"
@@ -68,8 +69,8 @@ export function ModalComponent() {
             </div>
           </div>
 
-          <div className="flex gap-4 w-full">
-            <div className="space-y-1.5 w-full">
+          <div className="flex w-full gap-4">
+            <div className="w-full space-y-1.5">
               <Label htmlFor="location">Location</Label>
               <Input
                 id="location"
@@ -77,7 +78,7 @@ export function ModalComponent() {
                 inputPrefix={<Search />}
               />
             </div>
-            <div className="space-y-1.5 w-full">
+            <div className="w-full space-y-1.5">
               <Label htmlFor="employment">Employment</Label>
               <Select defaultValue="full-time">
                 <SelectTrigger className="w-[180px]">
@@ -93,8 +94,8 @@ export function ModalComponent() {
           </div>
 
           <div className="w-full space-y-1.5">
-            <Label htmlFor="title">Title</Label>
-            <Input id="title" placeholder="What is your title?" />
+            <Label htmlFor="title-2">Title</Label>
+            <Input id="title-2" placeholder="What is your title?" />
           </div>
 
           <div className="w-full space-y-1.5">
@@ -103,7 +104,7 @@ export function ModalComponent() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <QuestionMarkCircledIcon className="w-4 h-4 text-fg-quinary" />
+                    <QuestionMarkCircledIcon className="h-4 w-4 text-fg-quinary" />
                   </TooltipTrigger>
                   <TooltipContent>
                     <p>Some help text over here...</p>
@@ -123,8 +124,7 @@ export function ModalComponent() {
             <Button
               type="button"
               variant="secondary"
-              className="flex items-center gap-1.5"
-            >
+              className="flex items-center gap-1.5">
               <Save className="h-5 w-5" /> Save as draft
             </Button>
           </DialogClose>

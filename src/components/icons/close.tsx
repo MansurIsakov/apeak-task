@@ -1,7 +1,7 @@
-import { forwardRef } from "react";
-import { cx } from "class-variance-authority";
+import { cx } from 'class-variance-authority';
+import { forwardRef } from 'react';
 
-import { IconProps, iconStyles } from "@/components/icons";
+import { IconProps, iconStyles } from '@/components/icons';
 
 export const Close = forwardRef<SVGSVGElement, IconProps>(
   ({ className, ...props }, ref) => {
@@ -14,8 +14,7 @@ export const Close = forwardRef<SVGSVGElement, IconProps>(
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         ref={ref}
-        className={className}
-      >
+        className={className}>
         <path
           d="M13 1L1 13M1 1L13 13"
           stroke="currentColor"
@@ -27,4 +26,4 @@ export const Close = forwardRef<SVGSVGElement, IconProps>(
     );
   }
 );
-Close.displayName = "Close";
+Close.displayName = 'Close';

@@ -1,21 +1,22 @@
-import { cva, type VariantProps } from "class-variance-authority";
+import { type VariantProps, cva } from 'class-variance-authority';
+import { SVGProps } from 'react';
 
-export * as Icons from "./_icons";
+export * as Icons from './_icons';
 
 type IconBaseProps = VariantProps<typeof iconStyles>;
 type IconWithoutFillBaseProps = VariantProps<typeof iconWithoutFillStyles>;
 
 export type IconProps<WithoutFill = false> = Omit<
-  React.SVGProps<SVGSVGElement>,
-  "fill"
+  SVGProps<SVGSVGElement>,
+  'fill'
 > &
   (WithoutFill extends true ? IconWithoutFillBaseProps : IconBaseProps);
 
 export const iconStyles = cva([], {
   variants: {
     fill: {
-      true: "fill-current",
-      false: "fill-none",
+      true: 'fill-current',
+      false: 'fill-none',
     },
   },
   defaultVariants: {

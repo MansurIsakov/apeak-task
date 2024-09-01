@@ -1,7 +1,7 @@
-import { forwardRef } from "react";
-import { cx } from "class-variance-authority";
+import { cx } from 'class-variance-authority';
+import { forwardRef } from 'react';
 
-import { IconProps, iconStyles } from "@/components/icons";
+import { IconProps, iconStyles } from '@/components/icons';
 
 export const Search = forwardRef<SVGSVGElement, IconProps>(
   ({ className, ...props }, ref) => {
@@ -14,8 +14,7 @@ export const Search = forwardRef<SVGSVGElement, IconProps>(
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         ref={ref}
-        className={className}
-      >
+        className={className}>
         <path
           d="M16.5 16.5L13.5834 13.5833M15.6667 8.58333C15.6667 12.4954 12.4954 15.6667 8.58333 15.6667C4.67132 15.6667 1.5 12.4954 1.5 8.58333C1.5 4.67132 4.67132 1.5 8.58333 1.5C12.4954 1.5 15.6667 4.67132 15.6667 8.58333Z"
           stroke="currentColor"
@@ -27,4 +26,4 @@ export const Search = forwardRef<SVGSVGElement, IconProps>(
     );
   }
 );
-Search.displayName = "Search";
+Search.displayName = 'Search';
