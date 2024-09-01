@@ -3,7 +3,7 @@ import { forwardRef } from 'react';
 
 import { IconProps, iconStyles } from '@/components/icons';
 
-export const Close = forwardRef<SVGSVGElement, IconProps>(
+export const XClose = forwardRef<SVGSVGElement, IconProps>(
   ({ className, ...props }, ref) => {
     className = cx(iconStyles(props), className);
     return (
@@ -26,4 +26,4 @@ export const Close = forwardRef<SVGSVGElement, IconProps>(
     );
   }
 );
-Close.displayName = 'Close';
+XClose.displayName = 'x-close';

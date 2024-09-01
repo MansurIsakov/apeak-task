@@ -1,7 +1,9 @@
 'use client';
 
 import { useMedia, useModalSteps } from '@/hooks';
+
 import { Icons } from '@/components/icons';
+import { StepIndicator } from '@/components/step-indicator';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -13,7 +15,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
-import { StepIndicator } from '@/components/step-indicator';
+
 import { StepOne, StepTwo } from './Steps';
 
 export function ModalComponent() {
@@ -53,13 +55,13 @@ export function ModalComponent() {
 function TitleIcon() {
   return (
     <div
-      className="after: border-component-border relative mb-4 hidden h-12 w-12 rounded-lg border p-3 shadow-xs sm:block"
+      className="relative mb-4 hidden h-12 w-12 rounded-lg border border-component-border p-3 shadow-xs sm:block"
       aria-hidden={true}>
       <span className="absolute -left-[24px] -top-[24px] h-[96px] w-[96px] rounded-full border border-gray-200 opacity-50"></span>
       <span className="absolute -left-[46px] -top-[46px] h-[140px] w-[140px] rounded-full border border-gray-200 opacity-50"></span>
       <span className="absolute -left-[64px] -top-[64px] h-[182px] w-[182px] rounded-full border border-gray-200 opacity-50"></span>
       <span className="absolute -left-[84px] -top-[84px] h-[226px] w-[226px] rounded-full border border-gray-200 opacity-50"></span>
-      <Icons.Flag className="h-6 w-6" />
+      <Icons.Flag05 className="h-6 w-6" />
     </div>
   );
 }
@@ -113,7 +115,7 @@ function SaveDraftButton() {
         type="button"
         variant="secondary"
         className="flex items-center gap-1.5">
-        <Icons.Save className="h-5 w-5" /> Save as draft
+        <Icons.Save01 className="h-5 w-5" /> Save as draft
       </Button>
     </DialogClose>
   );

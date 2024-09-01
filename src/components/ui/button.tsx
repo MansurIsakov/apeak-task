@@ -3,8 +3,10 @@ import { Slot } from '@radix-ui/react-slot';
 import { type VariantProps, cva } from 'class-variance-authority';
 import * as React from 'react';
 
+import { Icons } from '../icons';
+
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 ring-offset-2 focus-visible:ring-focus-ring disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
@@ -53,4 +55,23 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 );
 Button.displayName = 'Button';
 
-export { Button, buttonVariants };
+const ButtonCloseX = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ className, ...props }, ref) => {
+    return (
+      <button
+        type="button"
+        className={cn(
+          'focus:ring-focus-ring transform items-center justify-center rounded-md p-4 ring-offset-background transition-opacity hover:opacity-70 focus:outline-none focus:ring-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground',
+          className
+        )}
+        ref={ref}
+        {...props}>
+        <Icons.XClose className="h-3 w-3 text-fg-quinary" />
+        <span className="sr-only">Close</span>
+      </button>
+    );
+  }
+);
+ButtonCloseX.displayName = 'ButtonCloseX';
+
+export { Button, ButtonCloseX, buttonVariants };

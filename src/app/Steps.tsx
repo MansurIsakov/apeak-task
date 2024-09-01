@@ -1,4 +1,5 @@
 import { QuestionMarkCircledIcon } from '@radix-ui/react-icons';
+
 import { Icons } from '@/components/icons';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -31,7 +32,7 @@ export function StepOne() {
           <Input
             id="company"
             placeholder="Search for company"
-            inputPrefix={<Icons.Search />}
+            inputPrefix={<Icons.SearchLG />}
           />
         </div>
         <div className="w-full space-y-1.5">

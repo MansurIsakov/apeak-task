@@ -3,7 +3,7 @@ import { forwardRef } from 'react';
 
 import { IconProps, iconStyles } from '@/components/icons';
 
-export const Save = forwardRef<SVGSVGElement, IconProps>(
+export const Save01 = forwardRef<SVGSVGElement, IconProps>(
   ({ className, ...props }, ref) => {
     className = cx(iconStyles(props), className);
     return (
@@ -26,4 +26,4 @@ export const Save = forwardRef<SVGSVGElement, IconProps>(
     );
   }
 );
-Save.displayName = 'Save';
+Save01.displayName = 'save-01';
