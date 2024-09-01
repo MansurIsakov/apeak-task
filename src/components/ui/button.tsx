@@ -6,25 +6,23 @@ import * as React from 'react';
 import { Icons } from '../icons';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 ring-offset-2 focus-visible:ring-focus-ring disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-semibold transition-colors shadow-xs cursor-pointer focus-visible:outline-none ring-focus focus-visible:ring-2 ring-offset-2 disabled:pointer-events-none',
   {
     variants: {
       variant: {
         default:
-          'text-secondary-700 shadow-xs hover:bg-primary/90 bg-component-accent text-white',
-        destructive:
-          'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
-        outline:
-          'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
+          'bg-brand-600 text-base-white hover:bg-brand-700 disabled:bg-disabled disabled:text-fg-disabled disabled:border-disabled-subtle',
         secondary:
-          'bg-secondary text-secondary-700 shadow-xs hover:bg-secondary/80 border border-input',
-        ghost: 'hover:bg-accent hover:text-accent-foreground',
-        link: 'text-primary underline-offset-4 hover:underline',
+          'bg-base-white text-fg-secondary border border-secondary hover:bg-secondary-hover disabled:text-fg-disabled disabled:border-disabled-subtle',
+        destructive:
+          'bg-error-600 text-fg-white ring-error hover:bg-error-700 disabled:bg-disabled disabled:text-fg-disabled disabled:border-disabled-subtle',
       },
       size: {
-        default: 'h-11 px-4 py-2',
-        sm: 'h-8 rounded-md px-3 text-xs',
-        lg: 'h-10 rounded-md px-8',
+        default: 'h-11 px-1.5 py-2.5',
+        xs: 'h-9 rounded-md py-2 px-1',
+        sm: 'h-10 rounded-md py-2.5 px-1',
+        lg: 'h-12 rounded-md px-1.5 py-3',
+        xl: 'h-15 rounded-lg px-2.5 py-4',
         icon: 'h-9 w-9',
       },
     },
@@ -61,7 +59,7 @@ const ButtonCloseX = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         type="button"
         className={cn(
-          'focus:ring-focus-ring transform items-center justify-center rounded-md p-4 ring-offset-background transition-opacity hover:opacity-70 focus:outline-none focus:ring-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground',
+          'hover:bg-primary-hover flex items-center justify-center rounded-md p-4 ring-offset-background data-[state=open]:bg-accent data-[state=open]:text-muted-foreground',
           className
         )}
         ref={ref}

@@ -25,7 +25,7 @@ export function ModalComponent() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">Add Experience</Button>
+        <Button>Add Experience</Button>
       </DialogTrigger>
       <DialogContent className="w-11/12 overflow-hidden sm:max-w-[640px]">
         <DialogHeader>

@@ -427,9 +427,10 @@ const config: Config = {
             },
           },
         },
-
-        'focus-ring': 'var(--focus-ring)',
-        'focus-ring-error': 'var(--focus-ring-error)',
+      },
+      ringColor: {
+        focus: 'var(--focus-ring)',
+        error: 'var(--focus-ring-error)',
       },
       borderRadius: {
         none: 'calc(var(--radius) * 0)',
@@ -446,6 +447,16 @@ const config: Config = {
       },
       boxShadow: {
         xs: 'var(--shadow-xs)',
+        'focus-ring-shadow-xs': 'var(--focus-ring-shadow-xs)',
+        'focus-ring-shadow-sm': 'var(--focus-ring-shadow-sm)',
+        'focus-ring-error-shadow-xs': 'var(--focus-ring-error-shadow-xs)',
+        'focus-ring-shadow-xs-skeuomorphic':
+          'var(--focus-ring-shadow-xs-skeuomorphic)',
+        'focus-ring-error-shadow-xs-skeuomorphic':
+          'var(--focus-ring-error-shadow-xs-skeuomorphic)',
+      },
+      height: {
+        15: '3.75rem', // 60px
       },
     },
   },

@@ -132,6 +132,20 @@
 
     --focus-ring: var(--brand-500);
     --focus-ring-error: var(--error-500);
+    --focus-ring-shadow-xs: 0px 0px 0px 4px var(--focus-ring),
+      0px 0px 0px 2px var(--base-white), 0px 1px 2px 0px #1018280d;
+    --focus-ring-shadow-sm: 0px 0px 0px 4px var(--focus-ring),
+      0px 0px 0px 2px var(--base-white), 0px 1px 2px 0px #1018280f,
+      0px 1px 3px 0px #1018281a;
+    --focus-ring-error-shadow-xs: 0px 0px 0px 4px var(--focus-ring-error),
+      0px 0px 0px 2px var(--base-white), 0px 1px 2px 0px #1018280d;
+    --focus-ring-shadow-xs-skeuomorphic: 0px 0px 0px 4px var(--focus-ring),
+      0px 0px 0px 2px var(--base-white), 0px 1px 2px 0px #1018280d,
+      0px -2px 0px 0px #1018280d inset, 0px 0px 0px 1px #1018282e inset;
+    --focus-ring-error-shadow-xs-skeuomorphic: 0px 0px 0px 4px
+        var(--focus-ring-error),
+      0px 0px 0px 2px var(--base-white), 0px 1px 2px 0px #1018280d,
+      0px -2px 0px 0px #1018280d inset, 0px 0px 0px 1px #1018282e inset;
   }
 
   .dark {
@@ -153,5 +167,27 @@
 @layer base {
   body {
     @apply bg-base-black text-gray-900;
+  }
+}
+
+@layer utilities {
+  .focus-ring-shadow-xs {
+    @apply ring-focus-ring shadow-xs;
+  }
+
+  .focus-ring-shadow-sm {
+    @apply ring-focus-ring shadow-sm;
+  }
+
+  .focus-ring-error-shadow-xs {
+    @apply ring-focus-ring-error shadow-xs;
+  }
+
+  .focus-ring-shadow-xs-skeuomorphic {
+    @apply ring-focus-ring shadow-xs-skeuomorphic;
+  }
+
+  .focus-ring-error-shadow-xs-skeuomorphic {
+    @apply ring-focus-ring-error shadow-xs-skeuomorphic;
   }
 }

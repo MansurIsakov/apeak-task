@@ -7,11 +7,11 @@ export function StepIndicator({ currentStep }: StepIndicatorProps) {
     <div className="mb-2 mt-1 flex justify-center">
       <div
         className={`h-2 w-2 rounded-full ${
-          currentStep === 1 ? 'bg-component-accent' : 'bg-gray-300'
+          currentStep === 1 ? 'bg-brand-500' : 'bg-gray-300'
         }`}></div>
       <div
         className={`ml-2 h-2 w-2 rounded-full ${
-          currentStep === 2 ? 'bg-component-accent' : 'bg-gray-300'
+          currentStep === 2 ? 'bg-brand-500' : 'bg-gray-300'
         }`}></div>
     </div>
   );

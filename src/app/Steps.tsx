@@ -37,7 +37,11 @@ export function StepOne() {
         </div>
         <div className="w-full space-y-1.5">
           <Label htmlFor="website">Website</Label>
-          <Input id="website" placeholder="www.example.com" prefix="https://" />
+          <Input
+            id="website"
+            placeholder="www.example.com"
+            borderedPrefix="https://"
+          />
         </div>
       </div>
     </div>
@@ -53,7 +57,7 @@ export function StepTwo({ textareaRows = 5 }: { textareaRows?: number }) {
           <Input
             id="location"
             placeholder="Search for city"
-            inputPrefix={<QuestionMarkCircledIcon />}
+            inputPrefix={<Icons.SearchLG />}
           />
         </div>
 
@@ -93,7 +97,7 @@ export function StepTwo({ textareaRows = 5 }: { textareaRows?: number }) {
         </Label>
         <Textarea
           id="description"
-          placeholder="e.g. I joined Stripe’s Customer Success team..."
+          placeholder="e.g. I joined Stripe’s Customer Success team to help them scale their checkout product. I focused mainly on onboarding new customers and resolving complaints."
           rows={textareaRows}
         />
       </div>
