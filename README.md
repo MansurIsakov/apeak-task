@@ -4,13 +4,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 As it was stated to provide a breif explanation of the libraries used in this project, here is a list of the libraries used in this project:
 
-#### RadixUI
+#### RadixUI & Shadcn UI CLI
 
 I chose RadixUI because it offers accessible, unstyled UI primitives that adhere to WAI-ARIA standards, ensuring that components are highly accessible and compliant with best practices. The flexibility of RadixUI allows for easy customization, making it simple to style components according to project requirements without being tied to a specific design system. Additionally, RadixUI is highly composable, allowing me to build complex components using a straightforward API, which improves development speed and code maintainability.
 
-#### Shadcn UI CLI
-
-The Shadcn UI CLI was used for generating components because it streamlines the component development process by providing a set of customizable, pre-built components. It allows for rapid prototyping and consistent styling across the application, leveraging Tailwind CSS. The CLI reduces boilerplate code and setup time, enabling a faster development workflow. It also integrates seamlessly with RadixUI, enhancing the accessibility and usability of generated components. This combination ensures a scalable and maintainable component architecture, which aligns well with modern best practices.
+The Shadcn UI CLI was used for generating components because it speed up the process of the component development by providing a set of customizable, pre-built components.
 
 ## Getting Started
 
