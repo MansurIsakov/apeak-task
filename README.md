@@ -8,7 +8,7 @@ As it was stated to provide a breif explanation of the libraries used in this pr
 
 I chose RadixUI because it offers accessible, unstyled UI primitives that adhere to WAI-ARIA standards, ensuring that components are highly accessible and compliant with best practices. The flexibility of RadixUI allows for easy customization, making it simple to style components according to project requirements without being tied to a specific design system. Additionally, RadixUI is highly composable, allowing me to build complex components using a straightforward API, which improves development speed and code maintainability.
 
-The Shadcn UI CLI was used for generating components because it speed up the process of the component development by providing a set of customizable, pre-built components.
+The Shadcn UI CLI was used for generating components because it speeds up the component development process by providing a set of customizable off-the-shelf components.
 
 ## Getting Started
 
